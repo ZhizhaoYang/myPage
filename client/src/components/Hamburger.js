@@ -5,10 +5,15 @@ export default class Hamburger extends Component {
   render() {
     return (
       <div className="hamburger">
-        <button class="menu-toggle" />
+        <button className="menu-toggle" />
         <nav>
-          <ul class="menu">
-            <Link to="/" className="menuOption">
+          <ul className="menu">
+            <Link
+              to="/"
+              className="menuOption"
+              as="a"
+              style={{ textDecoration: "none" }}
+            >
               <li data-text="Home">Home</li>
             </Link>
             <li data-text="About">About</li>

@@ -5,7 +5,7 @@ import { Route, Switch } from "react-router-dom";
 
 import Home from "./components/Home";
 import About from "./components/About";
-import Test from "./components/Test";
+import Demos from "./components/Demos";
 
 class App extends Component {
   render() {
@@ -14,7 +14,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/demos" component={Test} />
+          <Route exact path="/demos" component={Demos} />
         </Switch>
       </div>
     );

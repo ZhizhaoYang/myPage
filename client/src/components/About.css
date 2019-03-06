@@ -9,19 +9,19 @@ ul {
     padding: 6px 20px;
     font-size: 36px; }
 
-button {
+.menu-toggle {
   opacity: 1;
   background-color: transparent;
   position: fixed;
   z-index: 2;
   top: 24px;
-  left: 24px;
+  right: 24px;
   border: none;
   width: 36px;
   height: 30px;
   outline: none;
   transition: opacity 0.2s ease-out; }
-  button:before {
+  .menu-toggle:before {
     content: "";
     position: absolute;
     top: 0;
@@ -33,7 +33,7 @@ button {
     width: 100%;
     background: linear-gradient(to bottom, #171717, #171717 20%, transparent 20%, transparent 40%, #171717 40%, #171717 60%, transparent 60%, transparent 80%, #171717 80%, #171717 100%);
     transition: opacity 0.2s ease-out, width 0.2s 0.2s ease-out; }
-  button:after {
+  .menu-toggle:after {
     opacity: 0;
     content: "×";
     color: white;
@@ -44,16 +44,16 @@ button {
     font-size: 76px;
     line-height: 0;
     transition: opacity 0.4s ease-out; }
-  button:active {
+  .menu-toggle:active {
     transform: translateY(2px); }
-  button:hover {
+  .menu-toggle:hover {
     opacity: 1; }
-  .open button {
+  .open .menu-toggle {
     opacity: 1; }
-    .open button:before {
+    .open .menu-toggle:before {
       opacity: 0;
       width: 0; }
-    .open button:after {
+    .open .menu-toggle:after {
       opacity: 1;
       transform: translate3d(0, 0, 0) rotate(360deg);
       transition: transform 0.4s 1s ease-out, opacity 0.4s 1s ease-out; }
@@ -125,6 +125,8 @@ ul.menu {
       overflow: hidden;
       transform: translate(-24px, 6px);
       transition: transform 0.1s ease-out, opacity 0.1s ease-out; }
+    ul.menu li:visited {
+      text-decoration: none; }
     ul.menu li:hover:before {
       left: 0;
       right: auto;
@@ -175,21 +177,21 @@ ul.menu {
   color: white; }
 
 .aboutContainer {
-  width: 93vw;
-  height: 96.5vh;
-  margin: 10px auto;
-  display: grid;
-  justify-items: left;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-gap: 0px;
-  grid-template-areas: "intro" "skills" "contacts"; }
-
-.aboutContainer {
   color: #171717;
   background-color: white; }
+  .aboutContainer {
+    width: 93vw;
+    height: 96.5vh;
+    margin: 10px auto;
+    margin-top: 50px;
+    display: grid;
+    justify-items: left;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    grid-template-areas: "intro" "skills" "contacts"; }
   .aboutContainer .part {
-    height: 500px;
+    padding: 55px 15px;
     transition: 0.2s ease-out;
     position: relative;
     display: block; }
@@ -217,16 +219,38 @@ ul.menu {
       border-color: transparent transparent white transparent; }
   .aboutContainer .intro {
     grid-area: intro;
-    margin-top: 74px; }
-    .aboutContainer .intro h1 {
-      font-family: Lato, sans-serif;
+    font-family: Lato, Josefin Sans, sans-serif;
+    text-align: left; }
+    .aboutContainer .intro h1,
+    .aboutContainer .intro h5 {
       text-transform: uppercase;
       font-size: 2.8em;
-      font-weight: 700;
-      text-align: left;
-      margin: 0; }
+      font-weight: 700; }
+    .aboutContainer .intro h1 {
+      margin: 10px 0px; }
+    .aboutContainer .intro h5 {
+      line-height: 1.5em;
+      font-size: 1.1em;
+      margin: 30px 0px;
+      word-spacing: 3px; }
+    .aboutContainer .intro p {
+      font-family: Lato, Josefin Sans, sans-serif;
+      line-height: 1.4em;
+      font-weight: 400;
+      word-spacing: 2px; }
   .aboutContainer .skills {
     grid-area: skills; }
+    .aboutContainer .skills h2 {
+      font-size: 2.3em;
+      margin-bottom: 23px; }
+    .aboutContainer .skills p {
+      font-family: Lato, Josefin Sans, sans-serif;
+      line-height: 1.4em;
+      word-spacing: 2px;
+      padding: 7px 0px; }
+      .aboutContainer .skills p b {
+        letter-spacing: -0.02em;
+        font-size: 1em; }
   .aboutContainer .contacts {
     grid-area: contacts; }
 
@@ -234,6 +258,8 @@ ul.menu {
   height: 74px;
   width: 100vw;
   margin: 0px auto;
+  background-color: white;
+  z-index: 999;
   border-bottom: 3px solid #171717;
   color: #171717;
   display: flex;
@@ -242,6 +268,7 @@ ul.menu {
   align-items: center;
   position: relative; }
   .header h4 {
+    padding-left: 10px;
     padding-right: 10px;
     padding-top: 4px;
     text-transform: uppercase;
