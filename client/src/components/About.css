@@ -1,0 +1,259 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url(https://fonts.googleapis.com/css?family=Lusitana);
+ul {
+  list-style: none; }
+  ul li {
+    cursor: pointer;
+    padding: 6px 20px;
+    font-size: 36px; }
+
+button {
+  opacity: 1;
+  background-color: transparent;
+  position: fixed;
+  z-index: 2;
+  top: 24px;
+  left: 24px;
+  border: none;
+  width: 36px;
+  height: 30px;
+  outline: none;
+  transition: opacity 0.2s ease-out; }
+  button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: auto;
+    width: 100%;
+    background: linear-gradient(to bottom, #171717, #171717 20%, transparent 20%, transparent 40%, #171717 40%, #171717 60%, transparent 60%, transparent 80%, #171717 80%, #171717 100%);
+    transition: opacity 0.2s ease-out, width 0.2s 0.2s ease-out; }
+  button:after {
+    opacity: 0;
+    content: "×";
+    color: white;
+    position: absolute;
+    top: 16px;
+    left: -4px;
+    font-family: Arial, sans-serif;
+    font-size: 76px;
+    line-height: 0;
+    transition: opacity 0.4s ease-out; }
+  button:active {
+    transform: translateY(2px); }
+  button:hover {
+    opacity: 1; }
+  .open button {
+    opacity: 1; }
+    .open button:before {
+      opacity: 0;
+      width: 0; }
+    .open button:after {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) rotate(360deg);
+      transition: transform 0.4s 1s ease-out, opacity 0.4s 1s ease-out; }
+
+nav {
+  z-index: 1;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  overflow: hidden; }
+  nav:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.98);
+    width: 100%;
+    height: 0;
+    transform: scale(0.04), translateY(9999px);
+    overflow: hidden; }
+  .open nav {
+    top: 0; }
+    .open nav:before {
+      animation: menu-animation 0.8s ease-out forwards; }
+
+ul.menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  color: white; }
+  ul.menu li {
+    opacity: 0;
+    text-align: center;
+    transform: translate3d(0, 36px, 0); }
+    ul.menu li:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      left: auto;
+      background-color: white;
+      height: 100%;
+      width: 0;
+      overflow: hidden;
+      transition: width 0.14s ease-out; }
+    ul.menu li:after {
+      opacity: 0;
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      color: #171717;
+      overflow: hidden;
+      transform: translate(-24px, 6px);
+      transition: transform 0.1s ease-out, opacity 0.1s ease-out; }
+    ul.menu li:hover:before {
+      left: 0;
+      right: auto;
+      width: 100%; }
+    ul.menu li:hover:after {
+      opacity: 1;
+      padding: 0 20px;
+      transform: translate(0px, 6px);
+      transition: transform 0.2s 0.14s ease-out, opacity 0.2s 0.14s ease-out; }
+    .open ul.menu li {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      transition: transform 0.2s ease-out, opacity 0.2s ease-out; }
+      .open ul.menu li:nth-child(1) {
+        transition-delay: 0.75s; }
+      .open ul.menu li:nth-child(2) {
+        transition-delay: 0.85s; }
+      .open ul.menu li:nth-child(3) {
+        transition-delay: 0.95s; }
+      .open ul.menu li:nth-child(4) {
+        transition-delay: 1.05s; }
+
+@keyframes menu-animation {
+  0% {
+    opacity: 0;
+    transform: scale(0.04) translateY(300%); }
+  40% {
+    transform: scale(0.04) translateY(0);
+    transition: ease-out; }
+  40% {
+    transform: scale(0.04) translateY(0); }
+  60% {
+    opacity: 1;
+    transform: scale(0.02) translateY(0px); }
+  61% {
+    transform: scale(0.04); }
+  99.9% {
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 100%; }
+  100% {
+    transform: scale(2);
+    height: 100%;
+    padding-bottom: 0;
+    border-radius: 0; } }
+.menuOption:visited {
+  text-decoration: none;
+  color: white; }
+
+.aboutContainer {
+  width: 93vw;
+  height: 96.5vh;
+  margin: 10px auto;
+  display: grid;
+  justify-items: left;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 0px;
+  grid-template-areas: "intro" "skills" "contacts"; }
+
+.aboutContainer {
+  color: #171717;
+  background-color: white; }
+  .aboutContainer .part {
+    height: 500px;
+    transition: 0.2s ease-out;
+    position: relative;
+    display: block; }
+    .open .aboutContainer .part {
+      transition: transform 0.2s 0.41s ease-out; }
+    .aboutContainer .part:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -12px;
+      margin: auto; }
+    .aboutContainer .part:after {
+      content: "";
+      pointer-events: none;
+      position: absolute;
+      top: -2px;
+      bottom: 0;
+      left: -6px;
+      margin: auto;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 6px 8px 6px;
+      border-color: transparent transparent white transparent; }
+  .aboutContainer .intro {
+    grid-area: intro;
+    margin-top: 74px; }
+    .aboutContainer .intro h1 {
+      font-family: Lato, sans-serif;
+      text-transform: uppercase;
+      font-size: 2.8em;
+      font-weight: 700;
+      text-align: left;
+      margin: 0; }
+  .aboutContainer .skills {
+    grid-area: skills; }
+  .aboutContainer .contacts {
+    grid-area: contacts; }
+
+.header {
+  height: 74px;
+  width: 100vw;
+  margin: 0px auto;
+  border-bottom: 3px solid #171717;
+  color: #171717;
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  align-items: center;
+  position: relative; }
+  .header h4 {
+    padding-right: 10px;
+    padding-top: 4px;
+    text-transform: uppercase;
+    font-family: Josefin Sans;
+    font-weight: normal; }
+  .header div {
+    width: 60px; }
+
+#myLogo {
+  transition: all 0.3s ease-in-out;
+  width: 50px;
+  height: 50px;
+  vertical-align: bottom; }
+
+/*# sourceMappingURL=About.css.map */
