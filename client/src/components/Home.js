@@ -99,7 +99,7 @@ class Home extends Component {
               Demos
             </Link>
             <Link
-              to="#"
+              to="/photos"
               className="links linkPhotos"
               onMouseEnter={() => this.mouseEnter(photosBg)}
               onMouseLeave={this.mouseLeave}

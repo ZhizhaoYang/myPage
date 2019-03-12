@@ -15,7 +15,8 @@ ul {
   position: fixed;
   z-index: 2;
   top: 24px;
-  right: 24px;
+  right: 13%;
+  left: 88vw;
   border: none;
   width: 36px;
   height: 30px;
@@ -29,7 +30,6 @@ ul {
     bottom: 0;
     left: 0;
     margin: auto;
-    right: auto;
     width: 100%;
     background: linear-gradient(to bottom, #171717, #171717 20%, transparent 20%, transparent 40%, #171717 40%, #171717 60%, transparent 60%, transparent 80%, #171717 80%, #171717 100%);
     transition: opacity 0.2s ease-out, width 0.2s 0.2s ease-out; }
@@ -58,7 +58,7 @@ ul {
       transform: translate3d(0, 0, 0) rotate(360deg);
       transition: transform 0.4s 1s ease-out, opacity 0.4s 1s ease-out; }
 
-nav {
+nav.navigation {
   z-index: 1;
   position: fixed;
   top: -100%;
@@ -68,7 +68,7 @@ nav {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   overflow: hidden; }
-  nav:before {
+  nav.navigation:before {
     content: "";
     position: absolute;
     top: 0;
@@ -81,9 +81,9 @@ nav {
     height: 0;
     transform: scale(0.04), translateY(9999px);
     overflow: hidden; }
-  .open nav {
+  .open nav.navigation {
     top: 0; }
-    .open nav:before {
+    .open nav.navigation:before {
       animation: menu-animation 0.8s ease-out forwards; }
 
 ul.menu {
@@ -256,8 +256,7 @@ ul.menu {
 
 .header {
   height: 74px;
-  width: 100vw;
-  margin: 0px auto;
+  width: 103vw;
   background-color: white;
   z-index: 999;
   border-bottom: 3px solid #171717;
@@ -266,10 +265,10 @@ ul.menu {
   justify-content: space-between;
   line-height: 50px;
   align-items: center;
-  position: relative; }
+  position: relative;
+  transition: padding-top 0.7s ease-in-out; }
   .header h4 {
-    padding-left: 10px;
-    padding-right: 10px;
+    transform: translateX(15px);
     padding-top: 4px;
     text-transform: uppercase;
     font-family: Josefin Sans;
@@ -277,10 +276,50 @@ ul.menu {
   .header div {
     width: 60px; }
 
+.menu-toggle {
+  transition: margin-top 0.7s ease-in-out; }
+
 #myLogo {
   transition: all 0.3s ease-in-out;
   width: 50px;
   height: 50px;
   vertical-align: bottom; }
+
+.contacts {
+  height: 30vh;
+  width: 100%;
+  margin: auto 0;
+  margin-left: 8%; }
+  .contacts a {
+    font-size: 2rem;
+    padding: 0 5%;
+    color: #171717; }
+
+@media screen and (min-width: 768px) {
+  .aboutContainer {
+    width: 65vw;
+    height: 96.5vh; }
+
+  .header {
+    width: 83vw;
+    height: 85px;
+    padding-top: 11px;
+    margin: 0 auto; }
+
+  .menu-toggle {
+    right: 9vw;
+    margin-top: 11px; }
+
+  .contacts {
+    height: 30vh;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-33%);
+    margin-bottom: 80px; }
+    .contacts a {
+      padding: 0 6%; } }
+@media screen and (min-width: 1024px) {
+  .contacts {
+    height: 30vh; } }
 
 /*# sourceMappingURL=About.css.map */

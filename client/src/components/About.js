@@ -7,7 +7,6 @@ import Hamburger from "./Hamburger";
 import "./About.css";
 
 // import node-mudules
-import { Link } from "react-router-dom";
 import $ from "jquery";
 import Headroom from "react-headroom";
 
@@ -25,9 +24,11 @@ export default class About extends Component {
       if (iCurScrollPos > iScrollPos) {
         $(".menu-toggle").css({ display: "none" });
       } else {
-        $(".menu-toggle").css({
-          display: "inline-block"
-        });
+        setTimeout(() => {
+          $(".menu-toggle").css({
+            display: "inline-block"
+          });
+        }, 300);
       }
       iScrollPos = iCurScrollPos;
     });
@@ -37,7 +38,7 @@ export default class About extends Component {
     return (
       <div className="About">
         {/* ----------- Headroom Header & Hamburger Menu ---------- */}
-        <Headroom style={{ height: "74px" }}>
+        <Headroom style={{ height: "85px" }}>
           <div className="header">
             <h4 id="about">About</h4>
             <img
@@ -66,10 +67,10 @@ export default class About extends Component {
               end development. My primary focus presently is on front end
               development but I love to explore new interesting techniques not
               just front end skills. I am constantly learning new techniques and
-              frameworks in both Front End and back-end to prepare myself for
-              becoming a full stack developer. As for the reason why programming
-              attracts me, as you see, the Internet widly changing the real
-              life, programming is its sword.
+              frameworks in both Front End and Back End to prepare myself for
+              becoming a Full Stack developer. As for the reason why programming
+              attracts me, as you see, the Internet widly changing the real life
+              every day and night, and programming is its sword.
             </p>
           </div>
 
@@ -90,31 +91,62 @@ export default class About extends Component {
             <p>
               <b>BACK END</b>
               <br />
-              Node.js, Express.js, MongoDB, MySQL, Ajax, Json, Restful API
+              Node.js, Express.js, MongoDB, MySQL, Ajax, Json, Restful API,
+              Linux Command Lines
             </p>
             <p>
               <b>TOOLS</b>
               <br />
-              Git, Webpack, Sublime, VS Code
+              Git, Webpack, Sublime, VS Code, Xcode, Eclipse, InteliJ, Postman
             </p>
             <p>
-              <b>Other Programming Languages</b>
+              <b>OTHER PROGRAMMING LANGUAGES</b>
               <br />
               Java, C++, PHP, Matlab
             </p>
             <p>
-              <b>Some Learned Courses</b>
+              <b>CLOUD/HOSTING</b>
               <br />
-              Data Structures, Algorithms, Unix/Linux, Assembly Language,
-              Computer Network, Operating System, Theory of Computing
+              AWS, HEROKU
             </p>
             <p>
-              <b>Languages</b>
+              <b>LEARNED COURSES</b>
+              <br />
+              Data Structures, Algorithms, Unix/Linux, Assembly Language,
+              Computer Network, Operating System, Theory of Computing and so on
+            </p>
+            <p>
+              <b>LANGUAGES</b>
               <br />
               English, Mandarin, Cantonese
             </p>
           </div>
-          <div className="contacts part">Contacts</div>
+          <div className="contacts part">
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github" />
+            </a>
+            <a href="mailto:ericyang654@gmail.com">
+              <i className="fas fa-envelope" />
+            </a>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-facebook" />
+            </a>
+            <a
+              href="https://www.snapchat.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-snapchat" />
+            </a>
+          </div>
         </div>
       </div>
     );

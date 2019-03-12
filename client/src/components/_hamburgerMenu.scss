@@ -32,7 +32,8 @@ ul {
   position: fixed;
   z-index: 2;
   top: 24px;
-  right: 24px;
+  right: 13%;
+  left: 88vw;
   border: none;
   width: 36px;
   height: 30px;
@@ -41,7 +42,6 @@ ul {
   &:before {
     content: "";
     @include position-center;
-    right: auto;
     width: 100%;
     background: linear-gradient(
       to bottom,
@@ -90,7 +90,7 @@ ul {
   }
 }
 
-nav {
+nav.navigation {
   z-index: 1;
   position: fixed;
   top: -100%;

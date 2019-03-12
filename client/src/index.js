@@ -5,6 +5,8 @@ import "../node_modules/html5-boilerplate/dist/css/normalize.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
+import "react-app-polyfill/ie9";
+
 import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
