@@ -1,62 +1,24 @@
 import React, { Component } from "react";
 
 // import local components
-import Hamburger from "./Hamburger";
+import NavBar from "./NavBar";
 
 // import local css files
 import "./About.css";
-
-// import node-mudules
-import $ from "jquery";
-import Headroom from "react-headroom";
+import "./NavBar";
 
 export default class About extends Component {
-  componentDidMount = () => {
-    $("button").on("click", function() {
-      $(".About").toggleClass("open");
-      $(".aboutContainer").toggle("display");
-      $(".header").toggle("display");
-    });
-
-    var iScrollPos = 0;
-    $(window).scroll("scroll", function() {
-      var iCurScrollPos = $(this).scrollTop();
-      if (iCurScrollPos > iScrollPos) {
-        $(".menu-toggle").css({ display: "none" });
-      } else {
-        setTimeout(() => {
-          $(".menu-toggle").css({
-            display: "inline-block"
-          });
-        }, 300);
-      }
-      iScrollPos = iCurScrollPos;
-    });
-  };
-
   render() {
     return (
-      <div className="About">
-        {/* ----------- Headroom Header & Hamburger Menu ---------- */}
-        <Headroom style={{ height: "85px" }}>
-          <div className="header">
-            <h4 id="about">About</h4>
-            <img
-              src={require("../img/myLogo.png")}
-              alt="ericYang"
-              id="myLogo"
-            />
-            {/* an empty div tag below to balance the header section */}
-            <div />
-          </div>
-        </Headroom>
-        <Hamburger />
+      <div className="About navController">
+        {/* Nav Bar (Header) */}
+        <NavBar />
 
         {/* Main Part Container */}
-        <div className="aboutContainer">
+        <div className="aboutContainer containerController">
           {/* ------------ Introduction Section ---------- */}
           <div className="intro part">
-            <h1>Hi, I'm </h1>
+            <h1>Hi, Im </h1>
             <h1>Eric Yang</h1>
             <h5>
               A front end developer
@@ -97,7 +59,8 @@ export default class About extends Component {
             <p>
               <b>TOOLS</b>
               <br />
-              Git, Webpack, Sublime, VS Code, Xcode, Eclipse, InteliJ, Postman
+              Git, NPM, Webpack, Sublime, VS Code, Xcode, Eclipse, InteliJ,
+              Postman
             </p>
             <p>
               <b>OTHER PROGRAMMING LANGUAGES</b>

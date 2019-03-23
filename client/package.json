@@ -1,4 +1,5 @@
 {
+  "homepage": "http://ZhizhaoYang.github.io/myPage",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -13,23 +14,27 @@
     "react-dom": "^16.8.3",
     "react-headroom": "^2.2.7",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "uuid": "^3.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "browserslist": [
-    "cover 95% and not ie <= 8",
+    "cover 98% and not ie <= 8",
     "not dead",
-    "not op_mini all",
-    "not chrome < 40",
-    "last 2 safari versions"
-  ]
+    "not chrome < 40"
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }

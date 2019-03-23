@@ -1,10 +1,7 @@
 import React, { Component } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default class Hamburger extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     let homeOption;
     let aboutOption;

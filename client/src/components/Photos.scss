@@ -1,0 +1,39 @@
+// @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+// @import url("https://fonts.googleapis.com/css?family=Lato");
+// @import "./hamburgerMenu";
+// @import "./textColor";
+// @import "./About.scss";
+@import "./NavBar.scss";
+
+.photosContainer {
+  background-color: white;
+
+  li {
+    cursor: pointer;
+  }
+
+  .photosWrapper {
+    max-height: 1200px;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 150px;
+    margin: 0 auto;
+  }
+
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    // flex: 0 1 auto;
+
+    // height: 400px;
+    // list-style: none;
+    // padding: 0;
+    // margin-top: 110px;
+    list-style: none;
+    padding: 0;
+    height: auto;
+    margin-top: 0px;
+  }
+}

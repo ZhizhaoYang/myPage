@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
-@import url("https://fonts.googleapis.com/css?family=Lato");
-@import "./hamburgerMenu";
+// @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+// @import url("https://fonts.googleapis.com/css?family=Lato");
+// @import "./hamburgerMenu";
+@import "./textColor";
+@import "./NavBar.css";
 
-$dark-theme: #171717 !default;
+// $dark-theme: #171717 !default;
 
 .aboutContainer {
   color: $dark-theme;
@@ -104,98 +106,98 @@ $dark-theme: #171717 !default;
   }
 }
 
-.header {
-  height: 74px;
-  width: 103vw;
-  background-color: white;
-  z-index: 999;
-  border-bottom: 3px solid $dark-theme;
-  color: $dark-theme;
-  display: flex;
-  justify-content: space-between;
-  line-height: 50px;
-  align-items: center;
-  position: relative;
-  transition: padding-top 0.7s ease-in-out;
-  h4 {
-    // padding-left: 10px;
-    // padding-right: 10px;
-    transform: translateX(15px);
-    padding-top: 4px;
-    text-transform: uppercase;
-    font-family: Josefin Sans;
-    font-weight: normal;
-  }
-  div {
-    width: 60px;
-  }
-}
-
-.menu-toggle {
-  transition: margin-top 0.7s ease-in-out;
-}
-#myLogo {
-  transition: all 0.3s ease-in-out;
-  width: 50px;
-  height: 50px;
-  vertical-align: bottom;
-}
-
-.contacts {
-  height: 30vh;
-  width: 100%;
-  margin: auto 0;
-  margin-left: 8%;
-  a {
-    font-size: 2rem;
-    padding: 0 5%;
-    color: #171717;
-  }
-}
-
-// @media screen and (min-width: 360px) and (max-width: 767px) {
-//   // .menu-toggle {
-//   //   & {
-//   //     left: 0;
-//   //   }
-//   // }
+// .header {
+//   height: 74px;
+//   width: 103vw;
+//   background-color: white;
+//   z-index: 999;
+//   border-bottom: 3px solid $dark-theme;
+//   color: $dark-theme;
+//   display: flex;
+//   justify-content: space-between;
+//   line-height: 50px;
+//   align-items: center;
+//   position: relative;
+//   transition: padding-top 0.7s ease-in-out;
+//   h4 {
+//     // padding-left: 10px;
+//     // padding-right: 10px;
+//     transform: translateX(15px);
+//     padding-top: 4px;
+//     text-transform: uppercase;
+//     font-family: Josefin Sans;
+//     font-weight: normal;
+//   }
+//   div {
+//     width: 60px;
+//   }
 // }
 
-//tablet portrait
-@media screen and (min-width: 768px) {
-  .aboutContainer {
-    & {
-      width: 65vw;
-      height: 96.5vh;
-    }
-  }
-  .header {
-    width: 83vw;
-    height: 85px;
-    padding-top: 11px;
-    margin: 0 auto;
-  }
+// .menu-toggle {
+//   transition: margin-top 0.7s ease-in-out;
+// }
+// #myLogo {
+//   transition: all 0.3s ease-in-out;
+//   width: 50px;
+//   height: 50px;
+//   vertical-align: bottom;
+// }
 
-  .menu-toggle {
-    right: 9vw;
-    margin-top: 11px;
-  }
+// .contacts {
+//   height: 30vh;
+//   width: 100%;
+//   margin: auto 0;
+//   margin-left: 8%;
+//   a {
+//     font-size: 2rem;
+//     padding: 0 5%;
+//     color: #171717;
+//   }
+// }
 
-  .contacts {
-    height: 30vh;
-    margin: 0 auto;
-    left: 50%;
-    transform: translateX(-33%);
-    margin-bottom: 80px;
-    a {
-      padding: 0 6%;
-    }
-  }
-} //end media definition
+// // @media screen and (min-width: 360px) and (max-width: 767px) {
+// //   // .menu-toggle {
+// //   //   & {
+// //   //     left: 0;
+// //   //   }
+// //   // }
+// // }
 
-// iPad Pro
-@media screen and (min-width: 1024px) {
-  .contacts {
-    height: 30vh;
-  }
-}
+// //tablet portrait
+// @media screen and (min-width: 768px) {
+//   .aboutContainer {
+//     & {
+//       width: 65vw;
+//       height: 96.5vh;
+//     }
+//   }
+//   .header {
+//     width: 83vw;
+//     height: 85px;
+//     padding-top: 11px;
+//     margin: 0 auto;
+//   }
+
+//   .menu-toggle {
+//     right: 9vw;
+//     margin-top: 11px;
+//   }
+
+//   .contacts {
+//     height: 30vh;
+//     margin: 0 auto;
+//     left: 50%;
+//     transform: translateX(-33%);
+//     margin-bottom: 80px;
+//     a {
+//       padding: 0 6%;
+//     }
+//   }
+// } //end media definition
+
+// // iPad Pro
+// @media screen and (min-width: 1024px) {
+//   .contacts {
+//     height: 30vh;
+//   }
+// }

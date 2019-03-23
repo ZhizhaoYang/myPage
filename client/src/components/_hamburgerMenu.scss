@@ -212,7 +212,10 @@ ul.menu {
   }
 }
 
-.menuOption:visited {
+.menuOption {
   text-decoration: none;
   color: white;
+  &:visited {
+    color: white;
+  }
 }
