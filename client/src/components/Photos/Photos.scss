@@ -1,0 +1,60 @@
+@import "../NavBar/NavBar.scss";
+
+.photosContainer {
+  background-color: white;
+  min-height: 250vh;
+
+  li {
+    cursor: default;
+  }
+
+  .photosWrapper {
+    max-height: 1200px;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 150px;
+    margin: 0 auto;
+  }
+
+  .grid {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    height: auto;
+    margin-top: 0px;
+  }
+}
+
+// ipad
+@media screen and (min-width: 768px) {
+  .photosContainer {
+    .photosWrapper {
+      width: 84%;
+      margin-top: 4%;
+    }
+  }
+}
+
+// fix the last two photos layout
+
+// const fixStyle = {
+//   // width: "29.55%", // large landscape
+//   width: "30.65%", // tablet
+//   minHeight: "1px"
+// };
+
+@media screen and (min-width: 768px) {
+  .fixEndPhoto {
+    width: 30.65%;
+    min-height: 1px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .fixEndPhoto {
+    width: 29.55%;
+  }
+}

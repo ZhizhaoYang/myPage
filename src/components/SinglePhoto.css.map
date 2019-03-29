@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,eAAgB;EACd,MAAM,EAAE,QAAQ;EAChB,MAAM,EAAE,IAAI;EACZ,IAAI,EAAE,SAAS",
-"sources": ["SinglePhoto.scss"],
-"names": [],
-"file": "SinglePhoto.css"
-}

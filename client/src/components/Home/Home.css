@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+.container {
+  width: 93vw;
+  height: 96.5vh;
+  color: black;
+  border-top: 3px solid #171717;
+  margin: 10px auto;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 0.8fr 1.1fr 1.2fr 1.2fr;
+  grid-gap: 10px;
+  grid-template-areas: "." "section1" "section2" "section3" "section4";
+  /* first section -- Introduction */
+}
+.container > section:nth-child(1) {
+  grid-area: section1;
+  text-align: center;
+  line-height: 2em;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  word-spacing: 0.05em;
+  font-size: 17px;
+  font-family: Josefin Sans, sans-serif;
+}
+.container > section:nth-child(2) {
+  grid-area: section2;
+}
+.container > lala {
+  color: white;
+}
+.container > lala22 {
+  color: white;
+}
+
+.homePage {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: background-image 0.3s ease-in-out;
+  transition: background-image 0.3s ease-in-out;
+}
+
+/* second section -- Logo */
+#logo {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-top: 30px;
+}
+
+/* third section -- Links to other routes */
+.container > section:nth-child(3) {
+  grid-area: section3;
+  display: flex;
+  justify-content: top;
+  flex-flow: column wrap;
+  margin-top: 10px;
+}
+
+.links {
+  color: #171717;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+  /* padding-bottom: 5px; */
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-family: Josefin Sans, sans-serif;
+  position: relative;
+}
+
+.links:visited {
+  color: #171717;
+}
+
+.links:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #171717;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.links:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* fourth section --Icons */
+.container > section:nth-child(4) {
+  grid-area: section4;
+  margin-top: 15px;
+}
+
+.container > section:nth-child(4) > a {
+  font-size: 2rem;
+  padding: 0 10px;
+  color: #171717;
+}
+
+/* grid system -- tablet */
+@media screen and (min-width: 768px) and (min-height: 567px) {
+  .container {
+    width: 96vw;
+    margin-top: 13px;
+    font-size: 1.125em;
+    border: 3px solid #171717;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+}
+@media screen and (min-height: 1024px) {
+  .container {
+    height: 84vh;
+  }
+}
+@media screen and (min-height: 1366px) {
+  .homePage {
+    height: 120vh;
+  }
+}
+
+/*# sourceMappingURL=Home.css.map */
