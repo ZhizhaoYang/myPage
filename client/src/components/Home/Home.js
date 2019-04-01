@@ -47,7 +47,7 @@ class Home extends Component {
               I'm Eric Yang
               <br />
               Front End Developer
-              <br />A student in CS Program
+              <br />A Big Programming Fan
             </p>
           </section>
           {/* section 2 -- Logo */}
@@ -62,30 +62,6 @@ class Home extends Component {
           </section>
           {/* section 3 -- Links to other Routes */}
           <section>
-            {/* <a
-              href="/about"
-              className="links linkAbout"
-              onMouseEnter={() => this.mouseEnter(aboutBg)}
-              onMouseLeave={this.mouseLeave}
-            >
-              About
-            </a>
-            <a
-              href="#"
-              className="links linkDemos"
-              onMouseEnter={() => this.mouseEnter(demosBg)}
-              onMouseLeave={this.mouseLeave}
-            >
-              Demos
-            </a>
-            <a
-              href="#"
-              className="links linkPhotos"
-              onMouseEnter={() => this.mouseEnter(photosBg)}
-              onMouseLeave={this.mouseLeave}
-            >
-              Photos
-            </a> */}
             <Link
               to="/about"
               className="links linkAbout"
@@ -95,14 +71,6 @@ class Home extends Component {
               About
             </Link>
             <Link
-              to="/demos"
-              className="links linkDemos"
-              onMouseEnter={() => this.mouseEnter(demosBg)}
-              onMouseLeave={this.mouseLeave}
-            >
-              Demos
-            </Link>
-            <Link
               to="/photos"
               className="links linkPhotos"
               onMouseEnter={() => this.mouseEnter(photosBg)}
@@ -110,15 +78,14 @@ class Home extends Component {
             >
               Photos
             </Link>
-            {/* <a href="#" className="links">
-              About
-            </a>
-            <a href="#" className="links">
-              Workt
-            </a>
-            <a href="#" className="links">
-              Photos
-            </a> */}
+            <Link
+              to="/portfolio"
+              className="links linkPortfolio"
+              onMouseEnter={() => this.mouseEnter(demosBg)}
+              onMouseLeave={this.mouseLeave}
+            >
+              Portfolio
+            </Link>
           </section>
           {/* section 4 -- Icons for social links */}
           <section>

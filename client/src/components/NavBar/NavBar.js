@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 // import local components
-import Hamburger from "../Hamburger";
+import Hamburger from "./Hamburger";
 
 // import external packets
 import Headroom from "react-headroom";

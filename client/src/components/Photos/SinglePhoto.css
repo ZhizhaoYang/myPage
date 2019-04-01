@@ -54,7 +54,7 @@
   clip-path: polygon(0 0, 100% 0, 0 100%);
   transition: all 0.3s ease-in-out 0.2s; }
 [class*="col-"]:hover span {
-  opacity: 0.8;
+  opacity: 0.85;
   top: 50%;
   transition: all 0.23s linear 0.4s; }
 

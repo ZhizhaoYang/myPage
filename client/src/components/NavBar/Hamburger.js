@@ -6,6 +6,7 @@ export default class Hamburger extends Component {
     let homeOption;
     let aboutOption;
     let photosOption;
+    let portfolioOption;
     const currentRoute = window.location.pathname;
     if (currentRoute !== "/") {
       homeOption = (
@@ -46,23 +47,28 @@ export default class Hamburger extends Component {
       );
     }
 
+    if (currentRoute !== "/portfolio") {
+      portfolioOption = (
+        <Link
+          to="/portfolio"
+          className="menuOption"
+          as="button"
+          style={{ textDecoration: "none" }}
+        >
+          <li data-text="Portfolio">Portfolio</li>
+        </Link>
+      );
+    }
+
     return (
       <div className="hamburger">
         <button className="menu-toggle" />
         <nav className="navigation">
           <ul className="menu">
-            {/* <Link
-              to="/"
-              className="menuOption"
-              as="a"
-              style={{ textDecoration: "none" }}
-            >
-              <li data-text="Home">Home</li>
-            </Link> */}
             {homeOption}
             {aboutOption}
             {photosOption}
-            <li data-text="Demos">Demos</li>
+            {portfolioOption}
           </ul>
         </nav>
       </div>
