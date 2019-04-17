@@ -64,7 +64,7 @@ export default class Photos extends Component {
         <Helmet>
           <title>Photos | Eric Yang | Front-End Developer</title>
         </Helmet>
-        <NavBar />
+        <NavBar pageName="photos" />
         <div className="photosContainer containerController">
           <div className="photosWrapper">
             <ul className="grid">

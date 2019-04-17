@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 @import url("https://fonts.googleapis.com/css?family=Lato");
 // @import "./hamburgerMenu";
-@import "../hamburgerMenu";
+@import "./hamburgerMenu";
 @import "../textColor";
 
 .header {
   height: 74px;
   width: 103vw;
   background-color: white;
+  font-size: 1em;
   z-index: 999;
   border-bottom: 3px solid $dark-theme;
   color: $dark-theme;
@@ -18,16 +19,18 @@
   position: relative;
   transition: padding-top 0.7s ease-in-out;
   h4 {
-    // padding-left: 10px;
-    // padding-right: 10px;
+    width: 33%;
     transform: translateX(15px);
     padding-top: 4px;
     text-transform: uppercase;
     font-family: Josefin Sans;
     font-weight: normal;
   }
+  a {
+    width: 33%;
+  }
   div {
-    width: 60px;
+    width: 33% !important;
   }
 }
 
@@ -39,6 +42,7 @@
   width: 50px;
   height: 50px;
   vertical-align: bottom;
+  transform: translateX(90%);
 }
 
 .contacts {
@@ -53,14 +57,6 @@
   }
 }
 
-// @media screen and (min-width: 360px) and (max-width: 767px) {
-//   // .menu-toggle {
-//   //   & {
-//   //     left: 0;
-//   //   }
-//   // }
-// }
-
 //tablet portrait
 @media screen and (min-width: 768px) {
   .aboutContainer {
@@ -74,6 +70,15 @@
     height: 85px;
     padding-top: 11px;
     margin: 0 auto;
+    h4 {
+      width: 2%;
+    }
+    a {
+      width: 2%;
+    }
+    div {
+      width: 18% !important;
+    }
   }
 
   .menu-toggle {
@@ -95,7 +100,9 @@
 
 // iPad Pro
 @media screen and (min-width: 1024px) {
-  .contacts {
-    height: 30vh;
+  .header {
+    div {
+      width: 13% !important;
+    }
   }
 }

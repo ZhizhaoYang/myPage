@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+@import "../textColor";
+@import "../NavBars";
+// @import "./menu";
+
+.NavBar_2 {
+  .container {
+    @include NavBars_General;
+    position: relative;
+    & {
+      z-index: -1;
+    }
+
+    span:nth-child(1) {
+      font-size: 2em;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    span:nth-child(2) {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+// @include hamburgersHelper;

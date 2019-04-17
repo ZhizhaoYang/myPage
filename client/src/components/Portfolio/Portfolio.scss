@@ -1,0 +1,53 @@
+.portfolio {
+  .portLayout {
+    .portContent {
+      position: relative;
+      box-sizing: border-box;
+      // background-color: orange;
+      // border: 1px black solid;
+      min-height: 70vh;
+      width: 84%;
+      margin: 0 auto;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      // padding: 4%;
+    }
+  }
+}
+
+/* custom swiper css */
+.swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23202020'%2F%3E%3C%2Fsvg%3E");
+}
+
+.swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23202020'%2F%3E%3C%2Fsvg%3E");
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 10px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #171717;
+}
+
+// .ant-carousel .slick-slide {
+//   text-align: center;
+//   height: 160px;
+//   line-height: 160px;
+//   background: #364d79;
+//   overflow: hidden;
+// }
+
+// .ant-carousel .slick-slide h3 {
+//   color: #fff;
+// }

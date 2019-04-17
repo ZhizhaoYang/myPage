@@ -16,7 +16,7 @@ export default class About extends Component {
           <title>About | Eric Yang | Front-End Developer</title>
         </Helmet>
         {/* Nav Bar (Header) */}
-        <NavBar />
+        <NavBar pageName="about" />
 
         {/* Main Part Container */}
         <div className="aboutContainer containerController">

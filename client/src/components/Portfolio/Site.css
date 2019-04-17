@@ -1,0 +1,24 @@
+.Site {
+  width: 90%;
+  min-height: 70vh;
+  margin: 0 auto;
+  color: black; }
+.Site .mainSection {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 50%;
+  height: 70vh; }
+  .Site .mainSection.leftSection {
+    z-index: 0;
+    background-image: url(https://raysu.ca/cm/content/1-blog/20160111-m2gobymandarin/cover.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .Site .mainSection.rightSection {
+    border: 3px solid #000;
+    border-width: 3px 3px 3px 0px;
+    background-color: aqua;
+    transform: translateY(3px); }
+
+/*# sourceMappingURL=Site.css.map */

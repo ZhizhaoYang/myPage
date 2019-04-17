@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import propTypes from "prop-types";
 
 // import local components
 import Hamburger from "./Hamburger";
@@ -8,7 +9,7 @@ import Hamburger from "./Hamburger";
 import Headroom from "react-headroom";
 import $ from "jquery";
 
-export default class NavBar extends Component {
+class NavBar extends Component {
   componentDidMount = () => {
     $("button").on("click", function() {
       $(".navController").toggleClass("open");
@@ -38,7 +39,7 @@ export default class NavBar extends Component {
         {/* ----------- Headroom Header & Hamburger Menu ---------- */}
         <Headroom style={{ height: "85px" }}>
           <div className="header">
-            <h4 id="about">About</h4>
+            <h4>{this.props.pageName}</h4>
             <Link to="/">
               <img
                 src={require("../../img/myLogo.png")}
@@ -56,3 +57,9 @@ export default class NavBar extends Component {
     );
   }
 }
+
+NavBar.propTypes = {
+  pageName: propTypes.string.isRequired
+};
+
+export default NavBar;

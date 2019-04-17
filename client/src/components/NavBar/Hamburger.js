@@ -9,7 +9,7 @@ export default class Hamburger extends Component {
     let portfolioOption;
     const currentRoute = window.location.pathname;
 
-    if (currentRoute !== "/") {
+    if (currentRoute !== "/#") {
       homeOption = (
         <Link
           to="/"

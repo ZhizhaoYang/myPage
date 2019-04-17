@@ -1,0 +1,13 @@
+@import "./textColor";
+
+@mixin NavBars_General {
+  background-color: white;
+  width: 83vw;
+  height: 85px;
+  padding-top: 11px;
+  margin: 0 auto;
+  font-size: 1em;
+  //   z-index: 9;
+  border-bottom: 3px solid $dark-theme;
+  color: $dark-theme;
+}

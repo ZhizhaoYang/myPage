@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import "./Home.css";
+
 import aboutBg from "../../img/about-bg.jpg";
 import demosBg from "../../img/demos-bg.jpg";
 import photosBg from "../../img/photos-bg.jpg";
@@ -42,26 +43,26 @@ class Home extends Component {
         {/* container for the grid system */}
         <div className="container">
           {/* section 1 -- The Introduction  */}
-          <section>
+          <div className="section">
             <p>
               I'm Eric Yang
               <br />
               Front End Developer
               <br />A Big Programming Fan
             </p>
-          </section>
+          </div>
           {/* section 2 -- Logo */}
-          <section>
-            <figure>
-              <img
-                id="logo"
-                src={require("../../img/myLogo.png")}
-                alt="EricYang"
-              />
-            </figure>
-          </section>
+          <div className="section">
+            {/* <figure> */}
+            <img
+              id="logo"
+              src={require("../../img/myLogo.png")}
+              alt="EricYang"
+            />
+            {/* </figure> */}
+          </div>
           {/* section 3 -- Links to other Routes */}
-          <section>
+          <div className="section">
             <Link
               to="/about"
               className="links linkAbout"
@@ -86,9 +87,9 @@ class Home extends Component {
             >
               Portfolio
             </Link>
-          </section>
+          </div>
           {/* section 4 -- Icons for social links */}
-          <section>
+          <div className="section">
             <a
               href="https://github.com/"
               target="_blank"
@@ -113,7 +114,7 @@ class Home extends Component {
             >
               <i className="fab fa-snapchat" />
             </a>
-          </section>
+          </div>
         </div>
       </div>
     );
