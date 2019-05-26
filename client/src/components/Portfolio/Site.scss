@@ -4,12 +4,8 @@
     width: 90%;
     min-height: 70vh;
     margin: 0 auto;
-    // right: 0;
-    // left: 0;
-    // bottom: 0;
-    // top: 0;
-    color: black;
-    // background-color: pink;
+    color: #000;
+    text-align: center;
   }
   .mainSection {
     display: inline-block;
@@ -18,18 +14,82 @@
     width: 50%;
     height: 70vh;
     &.leftSection {
-      // background-color: antiquewhite;
       z-index: 0;
-      background-image: url(https://raysu.ca/cm/content/1-blog/20160111-m2gobymandarin/cover.svg);
       background-position: 50% 50%;
       background-size: cover;
       background-repeat: no-repeat;
     }
     &.rightSection {
+      z-index: 0;
       border: 3px solid #000;
       border-width: 3px 3px 3px 0px;
-      background-color: aqua;
-      transform: translateY(3px);
+      // background-color: aqua;
+      // transform: translateY(3px);
+      .rightContainer {
+        float: left;
+        width: 100%;
+        height: 100%;
+        // background-color: pink;
+        position: relative;
+        .rightContentWrapper {
+          min-width: 9.5em;
+          min-height: 18rem;
+          left: 50%;
+          right: 50%;
+          top: 30%;
+          position: absolute;
+          background-color: white;
+          transform: translate(-50%);
+          text-align: center;
+          .logo {
+            min-width: 100px;
+            min-height: 100px;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .textWrapper {
+    & {
+      padding: 1px 0 30px;
+      margin-top: 10px;
+    }
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+
+    .work {
+      font-size: 0.75em;
+      word-spacing: 0.3em;
+    }
+    div {
+      margin-top: 44%;
+      position: relative;
+    }
+    .liveSite {
+      font-size: 1.1em;
+      word-spacing: 0.05em;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        top: 175%;
+        left: 0;
+        background-color: #171717;
+        border-radius: 5px;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
     }
   }
 }

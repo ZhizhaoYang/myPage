@@ -2,7 +2,8 @@
   width: 90%;
   min-height: 70vh;
   margin: 0 auto;
-  color: black; }
+  color: #000;
+  text-align: center; }
 .Site .mainSection {
   display: inline-block;
   box-sizing: border-box;
@@ -11,14 +12,64 @@
   height: 70vh; }
   .Site .mainSection.leftSection {
     z-index: 0;
-    background-image: url(https://raysu.ca/cm/content/1-blog/20160111-m2gobymandarin/cover.svg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat; }
   .Site .mainSection.rightSection {
+    z-index: 0;
     border: 3px solid #000;
-    border-width: 3px 3px 3px 0px;
-    background-color: aqua;
-    transform: translateY(3px); }
+    border-width: 3px 3px 3px 0px; }
+    .Site .mainSection.rightSection .rightContainer {
+      float: left;
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .Site .mainSection.rightSection .rightContainer .rightContentWrapper {
+        min-width: 9.5em;
+        min-height: 18rem;
+        left: 50%;
+        right: 50%;
+        top: 30%;
+        position: absolute;
+        background-color: white;
+        transform: translate(-50%);
+        text-align: center; }
+        .Site .mainSection.rightSection .rightContainer .rightContentWrapper .logo {
+          min-width: 100px;
+          min-height: 100px;
+          display: inline-block;
+          margin-left: auto;
+          margin-right: auto; }
+.Site .textWrapper {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.04em; }
+  .Site .textWrapper {
+    padding: 1px 0 30px;
+    margin-top: 10px; }
+  .Site .textWrapper .work {
+    font-size: 0.75em;
+    word-spacing: 0.3em; }
+  .Site .textWrapper div {
+    margin-top: 44%;
+    position: relative; }
+  .Site .textWrapper .liveSite {
+    font-size: 1.1em;
+    word-spacing: 0.05em; }
+    .Site .textWrapper .liveSite:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      top: 175%;
+      left: 0;
+      background-color: #171717;
+      border-radius: 5px;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.2s ease-in-out; }
+    .Site .textWrapper .liveSite:hover:before {
+      visibility: visible;
+      transform: scaleX(1); }
 
 /*# sourceMappingURL=Site.css.map */

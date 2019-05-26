@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Layout, Icon } from "antd";
+import { Layout } from "antd";
 import "antd/lib/icon/style";
 import Swiper from "react-id-swiper";
 // Need to add Pagination, Navigation modules
@@ -9,13 +9,6 @@ import NavBar2 from "../NavBar2/NavBar2";
 import Site from "./Site";
 
 import "./Portfolio.css";
-
-// class CustomSlide extends Component {
-//   render() {
-//     // const { index, ...props } = this.props;
-//     return <Site />;
-//   }
-// }
 
 class Portfolio extends Component {
   render() {
@@ -47,19 +40,39 @@ class Portfolio extends Component {
               <Content className="portContent">
                 <Swiper {...params}>
                   <div>
-                    <Site />
+                    {/* Site: LoveFunArt */}
+                    <Site
+                      imgLeftSect={require("../../img/portfolio/portfolio-bg/LoveFunArt.jpg")}
+                      brandLogo={require("../../img/portfolio/portfolio-logo/loveFunArtLogo.jpg")}
+                      imgWidth="140px"
+                      liveSiteLink="https://lovefunart.ca/"
+                    />
                   </div>
+                  {/* Site: Mandarin */}
                   <div>
-                    <Site />
+                    <Site
+                      imgLeftSect={require("../../img/portfolio/portfolio-bg/Shiweitian.jpg")}
+                      brandLogo={require("../../img/portfolio/portfolio-logo/ShiweitianLogo.jpg")}
+                      liveSiteLink="http://m2gobymandarin.com/"
+                    />
                   </div>
+                  {/* Site: leapFrog */}
                   <div>
-                    <Site />
+                    <Site
+                      imgLeftSect={require("../../img/portfolio/portfolio-bg/leapFrog.jpg")}
+                      brandLogo={require("../../img/portfolio/portfolio-logo/leapFrogLogo.jpg")}
+                      liveSiteLink="http://leapfrogcomms.ca/"
+                      imgWidth="136px"
+                    />
                   </div>
+                  {/* Site: BridgeTheHeart */}
                   <div>
-                    <Site />
-                  </div>
-                  <div>
-                    <Site />
+                    <Site
+                      imgLeftSect={require("../../img/portfolio/portfolio-bg/BridgeHeart.jpg")}
+                      brandLogo={require("../../img/portfolio/portfolio-logo/BridgeHeartLogo.jpg")}
+                      liveSiteLink="http://bridgetheheart.org/"
+                      imgWidth="148px"
+                    />
                   </div>
                 </Swiper>
               </Content>
