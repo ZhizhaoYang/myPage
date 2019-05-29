@@ -58,6 +58,9 @@
   .bm-item-list {
     color: #b8b7ad;
     padding: 0.8em;
+    height: 50%;
+    transform-origin: center;
+    transform: translateY(7vh);
   }
 
   /* Individual item */

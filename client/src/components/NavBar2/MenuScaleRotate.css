@@ -43,11 +43,30 @@ div {
     fill: #373a47; }
   div .bm-item-list {
     color: #b8b7ad;
-    padding: 0.8em; }
+    padding: 0.8em;
+    height: 50%;
+    transform-origin: center;
+    transform: translateY(7vh); }
   div .bm-item {
     display: inline-block; }
   div .bm-overlay {
     top: 0;
     background: rgba(0, 0, 0, 0.3); }
+
+.menu-item {
+  text-align: center;
+  font-size: 28px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  transition: font-size 0.25s linear; }
+  .menu-item:link {
+    color: white; }
+  .menu-item:visited {
+    color: white; }
+  .menu-item:hover {
+    color: white;
+    font-size: 38px; }
+  .menu-item:active {
+    color: white; }
 
 /*# sourceMappingURL=MenuScaleRotate.css.map */

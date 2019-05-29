@@ -3,3 +3,25 @@
 div {
   @include hamburgersHelper;
 }
+
+.menu-item {
+  text-align: center;
+  font-size: 28px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  transition: font-size 0.25s linear;
+  &:link {
+    color: white;
+  }
+  &:visited {
+    color: white;
+  }
+  &:hover {
+    color: white;
+    font-size: 38px;
+    // transition: font-size 0.35s linear;
+  }
+  &:active {
+    color: white;
+  }
+}
