@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { scaleRotate as Menu } from "react-burger-menu";
 
-// import history from "../../history"
-
 import "./MenuScaleRotate.css";
 
 export default class MenuScaleRotate extends Component {
