@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/myPage/static/media/No14.8edfe128.jpeg"
   },
   {
-    "revision": "0d3b6e336bc18e54fcb5",
+    "revision": "249645bb08c09df97106",
     "url": "/myPage/static/css/main.5991de04.chunk.css"
   },
   {
@@ -44,12 +44,12 @@ self.__precacheManifest = [
     "url": "/myPage/static/media/index.d34dc5b4.less"
   },
   {
-    "revision": "e0919ce08f46dc64d3c04eb22652b08d",
-    "url": "/myPage/static/media/LoveFunArt.e0919ce0.jpg"
+    "revision": "1ef202b617018d7fd4e60aa665fa72a3",
+    "url": "/myPage/static/media/LoveFunArt.1ef202b6.jpg"
   },
   {
-    "revision": "ecbe938181b2df213dc91eb5f0cb893d",
-    "url": "/myPage/static/media/Shiweitian.ecbe9381.jpg"
+    "revision": "ed29ec58fe74dc353947470df3ab16fb",
+    "url": "/myPage/static/media/Shiweitian.ed29ec58.jpg"
   },
   {
     "revision": "d75f69592c078b7df9f0fb615bc0aa74",
@@ -84,8 +84,8 @@ self.__precacheManifest = [
     "url": "/myPage/static/media/No13.b4973fff.jpeg"
   },
   {
-    "revision": "0d3b6e336bc18e54fcb5",
-    "url": "/myPage/static/js/main.86bc17c4.chunk.js"
+    "revision": "249645bb08c09df97106",
+    "url": "/myPage/static/js/main.d678a57d.chunk.js"
   },
   {
     "revision": "6f1d7845fe9c40f06dfe934f9433fe42",
@@ -168,7 +168,7 @@ self.__precacheManifest = [
     "url": "/myPage/static/css/2.28e4317b.chunk.css"
   },
   {
-    "revision": "9f0097b03e37032d27e8a229247e0a9f",
+    "revision": "03dbe2583483894ba266121a877a14ae",
     "url": "/myPage/index.html"
   }
 ];
