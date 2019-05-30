@@ -90,13 +90,13 @@ export default class About extends Component {
           </div>
           <div className="contacts part">
             <a
-              href="https://github.com/"
+              href="https://github.com/ZhizhaoYang"
               target="_blank"
               rel="noopener noreferrer"
             >
               <i className="fab fa-github" />
             </a>
-            <a href="mailto:ericyang654@gmail.com">
+            <a href="mailto:zhizhaoyang@163.com">
               <i className="fas fa-envelope" />
             </a>
             <a

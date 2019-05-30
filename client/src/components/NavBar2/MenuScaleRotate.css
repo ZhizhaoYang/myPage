@@ -31,6 +31,9 @@ div {
     width: 24px;
     right: 3vw !important;
     top: 3vh !important; }
+    div .bm-cross-button button {
+      width: 120% !important;
+      height: 170% !important; }
   div .bm-cross {
     background: white;
     width: 5px !important;
