@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
 
-import history from "./history";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
@@ -11,12 +10,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <HashRouter history={history}>
+        <HashRouter>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/portfolio" component={Portfolio} />
-            <Route exact path="/photos" component={Photos} />
+            <Route path="/about" component={About} />
+            <Route path="/photos" component={Photos} />
+            <Route path="/portfolio" component={Portfolio} />
           </Switch>
         </HashRouter>
       </div>

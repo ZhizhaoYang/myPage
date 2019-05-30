@@ -57,6 +57,8 @@ ul {
       opacity: 1;
       transform: translate3d(0, 0, 0) rotate(360deg);
       transition: transform 0.4s 1s ease-out, opacity 0.4s 1s ease-out; }
+  .menu-toggle a:link {
+    color: white; }
 
 nav.navigation {
   z-index: 1;
