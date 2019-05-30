@@ -74,6 +74,15 @@ class Portfolio extends Component {
                       imgWidth="148px"
                     />
                   </div>
+                  {/* Site: UTOI */}
+                  <div>
+                    <Site
+                      imgLeftSect={require("../../img/portfolio/portfolio-bg/utoi.jpg")}
+                      brandLogo={require("../../img/portfolio/portfolio-logo/utoiLogo.jpg")}
+                      liveSiteLink="http://utocanada.com/"
+                      imgWidth="148px"
+                    />
+                  </div>
                 </Swiper>
               </Content>
             </main>
