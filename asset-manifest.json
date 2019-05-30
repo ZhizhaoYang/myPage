@@ -1,17 +1,17 @@
 {
-  "main.css": "/myPage/static/css/main.0dfdd82c.chunk.css",
-  "main.js": "/myPage/static/js/main.d678a57d.chunk.js",
-  "main.js.map": "/myPage/static/js/main.d678a57d.chunk.js.map",
+  "main.css": "/myPage/static/css/main.53570b82.chunk.css",
+  "main.js": "/myPage/static/js/main.cef37a87.chunk.js",
+  "main.js.map": "/myPage/static/js/main.cef37a87.chunk.js.map",
   "runtime~main.js": "/myPage/static/js/runtime~main.8ace1223.js",
   "runtime~main.js.map": "/myPage/static/js/runtime~main.8ace1223.js.map",
   "static/css/2.28e4317b.chunk.css": "/myPage/static/css/2.28e4317b.chunk.css",
-  "static/js/2.c65120a6.chunk.js": "/myPage/static/js/2.c65120a6.chunk.js",
-  "static/js/2.c65120a6.chunk.js.map": "/myPage/static/js/2.c65120a6.chunk.js.map",
+  "static/js/2.7a1ec480.chunk.js": "/myPage/static/js/2.7a1ec480.chunk.js",
+  "static/js/2.7a1ec480.chunk.js.map": "/myPage/static/js/2.7a1ec480.chunk.js.map",
   "index.html": "/myPage/index.html",
-  "precache-manifest.de74bfdbcfd5ebdbeda4d59ebf392ef4.js": "/myPage/precache-manifest.de74bfdbcfd5ebdbeda4d59ebf392ef4.js",
+  "precache-manifest.6eca71c441c8424b3f5b0a5f1585e31a.js": "/myPage/precache-manifest.6eca71c441c8424b3f5b0a5f1585e31a.js",
   "service-worker.js": "/myPage/service-worker.js",
   "static/css/2.28e4317b.chunk.css.map": "/myPage/static/css/2.28e4317b.chunk.css.map",
-  "static/css/main.0dfdd82c.chunk.css.map": "/myPage/static/css/main.0dfdd82c.chunk.css.map",
+  "static/css/main.53570b82.chunk.css.map": "/myPage/static/css/main.53570b82.chunk.css.map",
   "static/media/BridgeHeart.jpg": "/myPage/static/media/BridgeHeart.f108df0b.jpg",
   "static/media/BridgeHeartLogo.jpg": "/myPage/static/media/BridgeHeartLogo.f8c00abe.jpg",
   "static/media/LoveFunArt.jpg": "/myPage/static/media/LoveFunArt.1ef202b6.jpg",
@@ -47,5 +47,7 @@
   "static/media/index.less": "/myPage/static/media/index.eab5285c.less",
   "static/media/leapFrog.jpg": "/myPage/static/media/leapFrog.d75f6959.jpg",
   "static/media/myLogo.png": "/myPage/static/media/myLogo.2fb78c8e.png",
-  "static/media/photos-bg.jpg": "/myPage/static/media/photos-bg.94414d2a.jpg"
+  "static/media/photos-bg.jpg": "/myPage/static/media/photos-bg.94414d2a.jpg",
+  "static/media/utoi.jpg": "/myPage/static/media/utoi.c10d76ac.jpg",
+  "static/media/utoiLogo.jpg": "/myPage/static/media/utoiLogo.bceb0523.jpg"
 }

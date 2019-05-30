@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "8edfe128a85e3e6e3581dc71afd124fc",
-    "url": "/myPage/static/media/No14.8edfe128.jpeg"
+    "revision": "b4973fff17b65a3ae50c8a90ee35c217",
+    "url": "/myPage/static/media/No13.b4973fff.jpeg"
   },
   {
-    "revision": "3144d0d0f8d6b0efefbe",
-    "url": "/myPage/static/css/main.0dfdd82c.chunk.css"
+    "revision": "267b592799dda3aed7c2",
+    "url": "/myPage/static/css/main.53570b82.chunk.css"
   },
   {
     "revision": "80a078f7cb40209e9412",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/myPage/static/media/No9.8ff676d3.jpeg"
   },
   {
-    "revision": "3e4c86e53779419d0a98",
-    "url": "/myPage/static/js/2.c65120a6.chunk.js"
+    "revision": "62ebb76109723ab29e70",
+    "url": "/myPage/static/js/2.7a1ec480.chunk.js"
   },
   {
     "revision": "2fb78c8e654add0867d4eb4e759d260b",
@@ -64,6 +64,14 @@ self.__precacheManifest = [
     "url": "/myPage/static/media/BridgeHeartLogo.f8c00abe.jpg"
   },
   {
+    "revision": "c10d76ac3076dad83baa242d7680632b",
+    "url": "/myPage/static/media/utoi.c10d76ac.jpg"
+  },
+  {
+    "revision": "bceb0523145f5084943c018a62439a43",
+    "url": "/myPage/static/media/utoiLogo.bceb0523.jpg"
+  },
+  {
     "revision": "a7198e17967e70d9cac2749ee4bab5d8",
     "url": "/myPage/static/media/No1.a7198e17.jpeg"
   },
@@ -80,12 +88,12 @@ self.__precacheManifest = [
     "url": "/myPage/static/media/No12.600fbaea.jpeg"
   },
   {
-    "revision": "b4973fff17b65a3ae50c8a90ee35c217",
-    "url": "/myPage/static/media/No13.b4973fff.jpeg"
+    "revision": "267b592799dda3aed7c2",
+    "url": "/myPage/static/js/main.cef37a87.chunk.js"
   },
   {
-    "revision": "3144d0d0f8d6b0efefbe",
-    "url": "/myPage/static/js/main.d678a57d.chunk.js"
+    "revision": "8edfe128a85e3e6e3581dc71afd124fc",
+    "url": "/myPage/static/media/No14.8edfe128.jpeg"
   },
   {
     "revision": "6f1d7845fe9c40f06dfe934f9433fe42",
@@ -164,11 +172,11 @@ self.__precacheManifest = [
     "url": "/myPage/static/media/No8.9c155b0b.jpeg"
   },
   {
-    "revision": "3e4c86e53779419d0a98",
+    "revision": "62ebb76109723ab29e70",
     "url": "/myPage/static/css/2.28e4317b.chunk.css"
   },
   {
-    "revision": "83e790bd97262887b60ea605b8671022",
+    "revision": "2a4f9c037d202fc871bbc667e7bd728d",
     "url": "/myPage/index.html"
   }
 ];
