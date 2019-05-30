@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/myPage/static/media/No14.f0ae4ab4.jpeg"
   },
   {
-    "revision": "de8f3e1a4abe821f71e4",
+    "revision": "71de30d3a4950c544dc7",
     "url": "/myPage/static/css/main.a7002e1d.chunk.css"
   },
   {
@@ -24,16 +24,16 @@ self.__precacheManifest = [
     "url": "/myPage/static/media/myLogo.2fb78c8e.png"
   },
   {
-    "revision": "398a406021b18466d1f1db185c03274c",
-    "url": "/myPage/static/media/about-bg.398a4060.jpg"
+    "revision": "56a6ad10f2ceb7952db3d29a061e8656",
+    "url": "/myPage/static/media/about-bg.56a6ad10.jpg"
   },
   {
-    "revision": "4bfbd656132688966205c13dc3fc4e35",
-    "url": "/myPage/static/media/demos-bg.4bfbd656.jpg"
+    "revision": "9f412a40a58bffee5b4de2a3ea1c870a",
+    "url": "/myPage/static/media/demos-bg.9f412a40.jpg"
   },
   {
-    "revision": "ae191e3d6753f4fb2d48be78b965931b",
-    "url": "/myPage/static/media/photos-bg.ae191e3d.jpg"
+    "revision": "17741594988b3972cf9727cae7004ad3",
+    "url": "/myPage/static/media/photos-bg.17741594.jpg"
   },
   {
     "revision": "eab5285cf2356c2db7b2f69a0ee2160f",
@@ -84,8 +84,8 @@ self.__precacheManifest = [
     "url": "/myPage/static/media/No13.338bd8a6.jpeg"
   },
   {
-    "revision": "de8f3e1a4abe821f71e4",
-    "url": "/myPage/static/js/main.633cc563.chunk.js"
+    "revision": "71de30d3a4950c544dc7",
+    "url": "/myPage/static/js/main.6f00d6eb.chunk.js"
   },
   {
     "revision": "5af970fb77acf0bd98a1957fa0277ce0",
@@ -168,7 +168,7 @@ self.__precacheManifest = [
     "url": "/myPage/static/css/2.2e04950b.chunk.css"
   },
   {
-    "revision": "1f74f20345c68b29a091ecc08743c360",
+    "revision": "207e4ff01e6063186ced8b9990423335",
     "url": "/myPage/index.html"
   }
 ];
