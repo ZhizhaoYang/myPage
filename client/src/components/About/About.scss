@@ -1,8 +1,8 @@
 // @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 // @import url("https://fonts.googleapis.com/css?family=Lato");
 // @import "./hamburgerMenu";
-@import "./textColor";
-@import "./NavBar.css";
+@import "../textColor";
+@import "../NavBar/NavBar.css";
 
 // $dark-theme: #171717 !default;
 
@@ -93,7 +93,8 @@
     p {
       b {
         letter-spacing: -0.02em;
-        font-size: 1em;
+        font-size: 1.1em;
+        text-decoration: underline;
       }
       font-family: Lato, Josefin Sans, sans-serif;
       line-height: 1.4em;
