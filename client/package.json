@@ -8,7 +8,7 @@
     "animate.css": "^3.7.0",
     "antd": "^3.16.1",
     "babel-plugin-import": "^1.11.0",
-    "browserslist": "^4.4.2",
+    "browserslist": "^4.16.5",
     "classnames": "^2.2.6",
     "fullpage.js": "^3.0.4",
     "headroom.js": "^0.9.4",
